@@ -1,5 +1,5 @@
 The OdinProject Assignment [Loi Wai]
-<h6>Apart form the instructons given belwo - It web will be modified later to look even better.</h6>
+<h6>Apart form the instructons given below - It web will be modified later to look even better.</h6>
 =====================================================================================
 
 <h1>Assignment - Project: Recipes -- Instructions below </h1>

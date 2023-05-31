@@ -1,0 +1,31 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.content-heading{
+    background-color: rgba(57, 71, 71, 0.658);
+    position: relative;
+    text-align: center;
+    padding: 2px;
+    
+}
+
+.content-main{
+    position: relative;
+    background-color: rgba(37, 43, 43, 0.651);
+    text-align: center;
+    padding: 2px;
+    
+}
+.content-main > ul > li{
+    background-color: rgb(158, 157, 156);
+    list-style-type: none;
+    display: inline;
+}
+
+.content-footer{
+    background-color: rgba(57, 71, 71, 0.658);
+    position: absolute;
+    padding-bottom: 0px;
+}
