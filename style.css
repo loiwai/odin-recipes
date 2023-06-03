@@ -40,6 +40,11 @@ h1+p {
   align-items: center;
 
 }
+.food-recipe-heading > h2, .food-recipe-heading > h2 > a, p > a{
+  text-decoration: none;
+  color: #333;
+  padding: 2px;
+}
 
 .wrap {
   margin: 2rem;
@@ -47,7 +52,6 @@ h1+p {
   transform-style: preserve-3d;
   transform: perspective(100rem);
 
-  cursor: pointer;
 }
 
 .container {
@@ -140,6 +144,38 @@ h1+p {
   font-size: 1.6rem;
 }
 
+/* ............... */
+
+.nav-link{
+  padding: 10px;
+}
+.nav-link ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-link li {
+        margin: 0 10px;
+    }
+
+    .nav-link a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px 10px;
+        border: 1px solid #333;
+        border-radius: 5px;
+    }
+
+    .nav-link a:hover {
+        background-color: #941f8ad3;
+        color: #fff;
+      
+      }
+
+/* .................... */
 
 main > h2,.container p {
   background-color: #0ac6ff;
