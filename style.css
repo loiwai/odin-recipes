@@ -38,10 +38,7 @@ h1+p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-.main > p {
-  background-color: rgb(0, 0, 0);
-  color: red;
+
 }
 
 .wrap {
@@ -71,8 +68,6 @@ h1+p {
   position: relative;
   transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
 
-  /* background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("https://images.unsplash.com/photo-1559113513-d5e09c78b9dd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9"); */
-
   background: linear-gradient(hsla(0,0%, 100%, .1), hsl(0, 0%, 100%, .1)), url(./images/bluecheesecake.jpg);
   background-position: var(--bX) var(--bY);
   background-size: 40rem auto;
@@ -80,6 +75,8 @@ h1+p {
 
   transition: transform .6s 1s;
 }
+
+
 
 .container::before,
 .container::after {
@@ -141,4 +138,64 @@ h1+p {
   left: 20px;
   color: hsla(0, 0%, 0%, .6);
   font-size: 1.6rem;
+}
+
+
+main > h2,.container p {
+  background-color: #0ac6ff;
+  border-radius: 10px 10px 70%;
+  color: rgb(0, 0, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CSS for mobile devices (screen width less than 600px) */
+@media (max-width: 600px) {
+  .content-main,
+  .content-description {
+      display: block;
+      text-align: justify;
+      align-items: center;
+  }
+  .content-description{
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 6vh;
+  }
+  .content-description >ul>li{
+    text-align: center;
+    display: flex;
+    padding-left: 2px;
+  }
+}
+
+/* CSS for larger devices (screen width greater than or equal to 600px) */
+@media (min-width: 600px) {
+  .content-main,
+  .content-description {
+      display: flex;
+      flex-direction: row;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      text-align: justify;
+  }
+  
+  .content-description {
+      flex-basis: 50%; /* Adjust the width as per your preference */
+      padding-top: 10vh;
+  }
+  .content-description{
+    display: block;
+    text-align: justify;
+    padding-left: 5vh;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  h2{
+    padding-top: 5px;
+  }
+
+  .content-description > p{
+    font-size: 20vh;
+  }
 }
